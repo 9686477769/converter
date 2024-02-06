@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <a href="common.html">HOME</a>
+    <style>
+        body{ 
+    text-align: center;
+    margin: 50px;
+    background-image:url(IMGconverter.jpeg) ;
+    background-size: cover;     
+}
+a:hover{
+    color: hotpink; 
+}
+h1{
+    transition: transform 0.35 ease-out; 
+}
+h1:hover{
+    color: mediumvioletred;
+    transform: translatex(50px);
+}
+h2{
+    color: blue;
+}
+h3{
+    transition: transform 0.35 ease-out;   
+}
+h3:hover{
+    color: mediumvioletred;
+    transform: translatex(50px);
+}
+input{
+    border-radius: 10px;
+    transition: transform 0.35 ease-in;
+    text-align: center;
+    box-shadow:2px 2px 2px 3px palevioletred; 
+    border: palevioletred;
+}
+input:hover{
+  background:linear-gradient(to right,mediumvioletred,aliceblue) ;
+  color: aliceblue;
+  transform: translatex(50px);
+}
+button{
+    border: mediumvioletred;
+    box-shadow:2px 2px 2px 3px palevioletred; 
+    border-radius: 10px;
+    transition: transform 0.35 ease-in;
+}
+button:hover{
+    transform: translatex(50px);
+}
+
+  
+    </style
+</head>
+<body>
+    <h1>Converter</h1><br>
+    <h3>Centimeter To Meter</h3>
+   <input type="text" id="cm"><br><br>
+  <button onclick="display()">click me</button>
+  <h2 id="mtr"></h2>
+   <script>
+      function display()
+       {
+       
+
+       let input= document.getElementById("cm").value;
+       let output= document.getElementById("mtr");
+       let c=input/100;
+       output.innerHTML=c+ "meters" ;
+
+       
+       }
+   </script>
+</body>
+</html>

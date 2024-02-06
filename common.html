@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style> 
+    
+    body{ 
+        text-align: center;
+        margin: 50px;
+        background-image: url(converterIMG1.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat ;
+        /* align-items:justify; 
+        display: flex; 
+        flex-wrap: wrap; */
+    }
+    .box{
+        height: 40px;
+        width: 300px;
+        border: 2px solid lightcoral;
+        border-radius: 10px;
+        margin: 20px;
+        font-size: 20px; 
+       text-align: center;
+       box-shadow: 2px 2px 2px lightcoral;
+       transition: transform 0.35 ease-in;
+    }
+    .box:hover{
+        background: linear-gradient(to right, lightblue,white);
+        transform: translateX(50px);
+    }
+    a{
+        text-decoration: none; 
+        
+    }
+    
+   h1{
+    transition: transform 0.35 ease-in;
+   }
+    h1:hover{
+        color: tomato;
+        transform: translateX(50px);
+
+    }
+
+    </style>
+    
+</head>
+<body>
+    <h1>Converter</h1>
+    <ul type="none">
+        <li class="box"><a href="centimeter to meter.html">Centemeter To Meter</a></li><br>
+        <li class="box"><a href="centmeter to inch.html">Centemeter To Inches </a></li><br>
+        <li class="box"><a href="Inches to centimeter.html">Inches To Centemeter</a></li><br>
+        <li class="box"><a href="meter to centimeter.html">Meter To Centemeter</a></li>
+    </ul>
+</body>
+</html>
